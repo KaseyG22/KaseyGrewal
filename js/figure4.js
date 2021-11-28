@@ -39,18 +39,18 @@ function drawDot4(mouseX,mouseY){
 }
 
 bridge4.addEventListener("mousemove", function(e) {
-	var brushPos = getBrushPos4(e.clientX, e.clientY);
-  var leftBut = detectLeftButton4(e);
-  if (leftBut == 1) {
-		drawDot4(brushPos.x, brushPos.y);
+	var brushPos4 = getBrushPos4(e.clientX, e.clientY);
+  var leftBut4 = detectLeftButton4(e);
+  if (leftBut4 == 1) {
+		drawDot4(brushPos4.x, brushPos4.y);
   }
 }, false);
 
 bridge4.addEventListener("touchmove", function(e) {
     e.preventDefault();
-    var touch = e.targetTouches[0];
-    if (touch) {
-    var brushPos = getBrushPos4(touch.pageX, touch.pageY);
-        drawDot4(brushPos.x, brushPos.y);
+    var touch4 = e.targetTouches[0];
+    if (touch4) {
+    var brushPos4 = getBrushPos4(touch4.pageX, touch4.pageY);
+        drawDot4(brushPos4.x, brushPos4.y);
     }
 }, false);
