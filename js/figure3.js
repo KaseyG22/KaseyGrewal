@@ -42,7 +42,7 @@ bridge3.addEventListener("mousemove", function(e) {
 	var brushPos3 = getBrushPos3(e.clientX, e.clientY);
   var leftBut3 = detectLeftButton3(e);
   if (leftBut3 == 1) {
-		drawDot3(brushPos3.x, brushPo3.y);
+		drawDot3(brushPos3.x, brushPos3.y);
   }
 }, false);
 
